@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+  font-family: sans-serif;
+}
+
 .ttl{
   margin: 0 auto;
   padding: 40px 20px;
