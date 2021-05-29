@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.ttl{
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.ttl__txt{
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.ttl__txt::before{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #909090;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ttl__lead{
+  font-size: 14px;
+  text-align: center;
+}
+
+.container{
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(45deg, #e0e0e0 0%, #fff 100%);
+  background-image: linear-gradient(45deg, #e0e0e0 0%, #fff 100%);
+  transition: .4s;
+}
+
+.btn:active {/*ボタンを押したとき*/
+  transform: rotate(10deg);
+}
+
+/* ボタンの文字 */
+.btn__txt{
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ボタンの背景色 */
+.-crown{
+  background: rgb(84, 74, 100);
+  background: linear-gradient(45deg, rgba(84, 74, 100, 1) 35%, rgba(110, 67, 82, 1) 100%);
+}
+
+.-runaway{
+  background: rgb(0, 0, 0);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 31%, rgba(53, 136, 157, 1) 68%);
+}
+
+.-cysm{
+  background: rgb(116, 65, 153);
+  background: linear-gradient(45deg, rgba(116, 65, 153, 1) 33%, rgba(255, 230, 0, 1) 100%);
+}
+
+.-bluehour{
+  background: rgb(67, 168, 202);
+  background: linear-gradient(45deg, rgba(67, 168, 202, 1) 31%, rgba(214, 96, 129, 1) 68%);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .container{
+    max-width: 335px;
+  }
+}

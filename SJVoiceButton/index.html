@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+  <title>SJVoiceButton</title>
+</head>
+
+<body>
+  <section class="ttl">
+    <h1 class="ttl__txt">SJ Voice Button</h1>
+    <p class="ttl__lead">スヨがずっとイチャイチャしてる</p>
+  </section>
+  <div class="container">
+    <!-- Saranheyo -->
+    <p class="btn_p"><a onClick="soundSH()" class="btn -runaway"><span class="btn__txt">サランヘヨ♡</span></a></p>
+
+    <audio id="Saranheyo" preload="auto">
+      <source src="voice/Saranheyo.mp3" type="audio/mp3">
+      </source>
+    </audio>
+
+    <!-- Serenade -->
+    <p class="btn_p"><a onClick="soundSN()" class="btn -cysm"><span class="btn__txt">セレナーデ</span></a></p>
+
+    <audio id="Serenade" preload="auto">
+      <source src="voice/Serenade.mp3" type="audio/mp3">
+      </source>
+    </audio>
+
+    <!-- Kiyowo -->
+    <p class="btn_p">
+      <a onClick="soundKiyowo()" class="btn -cysm"><span class="btn__txt">スビニ<br>キヨウォ〜♡</span></a>
+    </p>
+
+    <audio id="Kiyowo" preload="auto">
+      <source src="voice/Kiyowo.mp3" type="audio/mp3">
+      </source>
+    </audio>
+
+    <!-- Muse -->
+    <p class="btn_p"><a onClick="soundMuse()" class="btn -bluehour"><span class="btn__txt">ミューズ<br>イエヨ？</span></a></p>
+
+    <audio id="Muse" preload="auto">
+      <source src="voice/Muse.mp3" type="audio/mp3">
+      </source>
+    </audio>
+
+  </div>
+</body>
+
+</html>
