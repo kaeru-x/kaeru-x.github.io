@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+  <title>SexyVoiceButton</title>
+</head>
+<body>
+  <div class="container">
+    <!-- KaxyThankYou -->
+    <p class="btn_p"><a onClick="soundKTY()" class="btn -kenty">KaxyThankYou</a></p>
+
+    <audio id="KaxyThankYou" preload="auto">
+      <source src="voice/KaxyThankYou.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <!-- KaxyZone -->
+    <p class="btn_p"><a onClick="soundKZ()" class="btn"><span class="shori">Kaxy</span><span class="kenty">Zone</span></a></p>
+
+    <audio id="KaxyZone" preload="auto">
+      <source src="voice/KaxyZone.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <!-- KaxyRose -->
+    <p class="btn_p"><a onClick="soundKR()" class="btn -shori">KaxyRose</a></p>
+
+    <audio id="KaxyRose" preload="auto">
+      <source src="voice/KaxyRose.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <!-- Sorry -->
+    <p class="btn_p"><a onClick="soundSorry()" class="btn -fuma">ごめん(暴君)</a></p>
+
+    <audio id="Sorry" preload="auto">
+      <source src="voice/Sorry.mp3" type="audio/mp3"></source>
+    </audio>
+
+  </div>
+</body>
+</html>
